@@ -1,25 +1,22 @@
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-xmlns="https://rodimaz.github.io/Assignment4-CSE445/Hotels.xsd"
-targetNamespace ="https://rodimaz.github.io/Assignment4-CSE445/Hotels.xsd"
-elementFormDefault="qualified" attributeFormDefault="unqualified">
-	
-<xsd:element name="Hotels" type ="HotelsType"/>
-	
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:element name="Hotels" type ="HotelsType"/>
+
 	<xsd:complexType name ="HotelsType">
-	<xsd:sequence>
-		<xsd:element name="Hotel" type ="HotelDetails" minOccurs="1" maxOccurs="unbounded"/>
-	</xsd:sequence>
-	</xsd:complexType>			
+		<xsd:sequence>
+			<xsd:element name="Hotel" type ="HotelDetails" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
 
 	<xsd:complexType name ="HotelDetails">
 		<xsd:sequence>
 			<xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
 			<xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
 			<xsd:element name="Address" type ="AddressType" minOccurs="1" maxOccurs="1"/>
-		</xsd:sequence>	
+		</xsd:sequence>
 		<xsd:attribute name="Rating" type="xsd:decimal" use="optional"/>
 	</xsd:complexType>
-	
+
 	<xsd:complexType name="AddressType">
 		<xsd:sequence>
 			<xsd:element name="Number" type="xsd:string"/>
@@ -30,5 +27,5 @@ elementFormDefault="qualified" attributeFormDefault="unqualified">
 		</xsd:sequence>
 		<xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
 	</xsd:complexType>
-	
+
 </xsd:schema>
