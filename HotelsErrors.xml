@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://rodimaz.github.io/Assignment4-CSE445/Hotels.xsd">
-
-	<Hotel NearestAirport="Sky Harbor" Rating="4.1">
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotel xmlns="https://rodimaz.github.io/Assignment4-CSE445/"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://rodimaz.github.io/Assignment4-CSE445/xml Hotels.xsd">
+	<Hotel Rating ="4.1">
 		<Name>DoubleTree</Name>
 		<Phone>877-504-1682</Phone>
-		<Address>
+		<Address NearestAirport="Sky Harbor">
 			<Number>2100</Number>
 			<Street>S Priest Dr</Street>
 			<City>Tempe</City>
@@ -14,11 +14,11 @@
 		</Address>
 	</Hotel>
 
-	<Hotel NearestAirport="Sky Harbor" Rating="4.5">
+	<Hotel Rating="4.5">
 		<Name>Hampton Inn</Name>
 		<Name>Suites Phoenix Glendale-Westgate</Name>
 		<Phone>855-605-0317</Phone>
-		<Address>
+		<Address NearestAirport="Sky Harbor">
 			<Number>6630</Number>
 			<Street>N 95th Ave</Street>
 			<City>Glendale</City>
@@ -27,10 +27,10 @@
 		</Address>
 	</Hotel>
 
-	<Hotel NearestAirport="Raleigh-Durham International Airport" Rating="3.0">
+	<Hotel>
 		<Name>Embassy Suites</Name>
 		<Phone>919-881-0000</Phone>
-		<Address>
+		<Address NearestAirport="Raleigh-Durham International Airport">
 			<Number>4700</Number>
 			<Street>Creedmoor Rd</Street>
 			<City>Raleigh</City>
@@ -39,11 +39,11 @@
 		</Address>
 	</Hotel>
 
-	<Hotel NearestAirport="Boston Logan International Airport" Rating="4.5">
+	<Hotel Rating="4.5">
 		<Name>Hampton Inn &amp; Suites Boston/Waltham</Name>
 		<Phone>866-994-3798</Phone>
 		<Phone>781-466-6644</Phone>
-		<Address>
+		<Address NearestAirport="Boston Logan International Airport">
 			<Number>135</Number>
 			<Street>2nd Ave</Street>
 			<City>Waltham</City>
@@ -52,11 +52,11 @@
 		</Address>
 	</Hotel>
 
-	<Hotel NearestAirport="Sky Harbor" Rating="4.0">
+	<Hotel Rating="4.0">
 		<Name>Arizona Grand Resort &amp; Spa</Name>
 		<Phone>877-800-4888</Phone>
 		<Phone>877-504-2598</Phone>
-		<Address>
+		<Address NearestAirport="Sky Harbor">
 			<Number>8000</Number>
 			<Street>S Arizona Grand Pkwy</Street>
 			<City>Phoenix</City>
@@ -65,9 +65,9 @@
 		</Address>
 	</Hotel>
 
-	<Hotel NearestAirport="Sky Harbor">
+	<Hotel>
 		<Name>Motel 6</Name>
-		<Address>
+		<Address NearestAirport="Sky Harbor">
 			<Number>1720</Number>
 			<Street>S Priest Dr</Street>
 			<City>Tempe</City>
@@ -76,10 +76,10 @@
 		</Address>
 	</Hotel>
 
-	<Hotel NearestAirport="San Francisco International Airport" Rating="4.6">
+	<Hotel Rating="4.6">
 		<Name>Hotel Nikko San Francisco</Name>
 		<Phone>415-394-1111</Phone>
-		<Address>
+		<Address NearestAirport="San Francisco International Airport">
 			<Number>222</Number>
 			<Street>Mason St</Street>
 			<City>San Francisco</City>
@@ -88,34 +88,33 @@
 		</Address>
 	</Hotel>
 
-	<Hotel NearestAirport="Tampa International Airport">
+	<Hotel>
 		<Name>Wyndham Grand Clearwater Beach</Name>
 		<Phone>727-281-9500</Phone>
-		<Address>
+		<Address NearestAirport="Tampa International Airport">
 			<Number>100</Number>
 			<Street>Coronado Dr</Street>
 			<City>Clearwater</City>
 			<State>FL</State>
 			<Zip>33767</Zip>
+		</Address>
 	</Hotel>
 
-	<Hotel NearestAirport="Dallas/Fort Worth International Airport" Rating="4.6">
+	<Hotel Rating="4.6">
 		<Name>Omni Dallas Hotel</Name>
 		<Phone>214-744-6664</Phone>
-		<Address>
+		<Address NearestAirport="Dallas/Fort Worth International Airport">
 			<Number>555</Number>
 			<Street>S Lamar St</Street>
 			<City>Dallas</City>
 			<State>TX</State>
 			<Zip>75202</Zip>
-		</Address>
 	</Hotel>
 
-
-	<Hotel NearestAirport="Ronald Reagan Washington National Airport" Rating="4.3">
+	<Hotel Rating="4.3">
 		<Name>Marriott Marquis</Name>
 		<Phone>202-824-9200</Phone>
-		<Address>
+		<Address NearestAirport="Ronald Reagan Washington National Airport">
 			<Number>901</Number>
 			<Street>Massachusetts Ave NW</Street>
 			<City>Washington</City>
@@ -136,4 +135,5 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
-</Hotels>
+
+</Hotel>
