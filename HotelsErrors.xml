@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotel xmlns="https://rodimaz.github.io/Assignment4-CSE445/"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<Hotel  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="https://rodimaz.github.io/Assignment4-CSE445/xml Hotels.xsd">
+	
 	<Hotel Rating ="4.1">
 		<Name>DoubleTree</Name>
 		<Phone>877-504-1682</Phone>
